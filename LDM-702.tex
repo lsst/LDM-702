@@ -4,7 +4,14 @@
 
 % Package imports go here.
 
+\usepackage[nonumberlist,nogroupskip,toc,numberedsection=autolabel]{glossaries}
+\usepackage{environ}
+\usepackage{enumitem}
+
 % Local commands go here.
+
+\input{aglossary.tex}
+\makeglossaries
 
 % To add a short-form title:
 % \title[Short title]{Title}
@@ -56,4 +63,6 @@ TOR for image display working group
 %Make sure lsst-texmf/bin/generateAcronyms.py is in your path
 \section{Acronyms used in this document}\label{sec:acronyms}
 \input{acronyms.tex}
+\printglossaries
+
 \end{document}
