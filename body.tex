@@ -1,8 +1,49 @@
-\section{Introduction} \label{sec:intro}
-This is in the file body.tex. Put your text here.
+\section{Scope}
 
-The appendices for the \appref{sec:bib} and \appref{sec:acronyms} are defined in the main file CODE-nnn.tex.
+This Working Group is to look into image display for pipeline developers as well as \gls{QA} and commissioning staff.
+It should start by 15 $^{th}$ May  2019 and conclude by 15 July 2019 with an interim report at \gls{DMLT} in June.
 
-The main bibliography file is in the lsst-texmf/texmf/bibtex/bib so you can refer to documents such as \citeds{LDM-294} (from lsst.bib)  or papers like \cite{2008arXiv0805.2366I} (from refs\_ads.bib). You may make a \gls{PR} to add new refs to these files.
 
-Acronyms like \gls{BOE} and \gls{BAC} will be picked up by generateAcronyms.py which is in lsst-texmf/bin -- that needs to be in the PATH.
+\section{Responsibilities}
+
+The Working Group (\gls{WG}) has the following responsibilities:
+
+\begin{itemize}
+ \item Take note of \citeds{DMTN-085} which is the basic reason for this \gls{WG}.
+ \item Take input from pipeline developers, the commissioning team and \gls{QA} staff.
+ \item Identify use cases for image display in notebooks where some form of interactive overlay is needed.
+ \item Identify use case for overlay and interactivity with images sin the portal.
+ \item Consider if PyViz functionality is sufficient for the notebook use cases.
+ \item If possible identify widget work which could be outsourced.
+ \item Consider the minimal set of use cases for the portal which will be useful to 95\% of users.
+ \item Consider how well firefly meets the portal needs.
+ \item The \gls{WG} Chair shall convene meetings on a regular basis.
+ \item The \gls{WG} will make a recommendation on minimum and desirable image display functionality, potentially identifying tools (not necessarily a single tool) which could be used in each case.
+ \item The \gls{WG} will draft a report with some recommendations for the consideration of \gls{DMLT}.
+\end{itemize}
+
+
+\section{Specific tasks}
+
+\subsection{Draft use case/requirements document(s)}
+Consolidate and classify use cases for image display in a single document. This is not just for the \gls{LSP} but rather a cross cutting document. This should clearly identify \gls{DM} requirements and \gls{DM} desirable functionality and like wise for what may be considered non \gls{DM} requirement.
+The group should decide if they wish to spend a little time on understanding the camera diagnostic display requirements, care should be taken to not spend a lot of effort to scope non \gls{DM} work however. It may be preferable to spend time consulting with camera when a consolidated list is available.
+In general cost and scope should be considered.
+
+
+\section{Membership}
+
+The proposed membership is:
+
+\begin{itemize}
+  \item Yusra AlSayyad \textbf{(Chair)},
+  \item John Swinbank (as custodian of \citeds{DMTN-085}),
+  \item Lauren
+  \item Someone from commissioning or Simon ?
+  \item Gregory Dubois Felsmann
+\end{itemize}
+
+\section{Reporting}
+
+Th \gls{WG} Chair shall report directly to the \gls{DM} Project manager weekly.
+

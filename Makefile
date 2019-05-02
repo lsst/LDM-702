@@ -11,7 +11,7 @@ OBJ=$(SRC:.tex=.pdf)
 #Default when you type make
 all: $(OBJ)
 
-$(OBJ): $(tex) acronyms.tex
+$(OBJ): $(tex) acronyms.tex aglossary.tex
 	latexmk -bibtex -xelatex -f $(SRC)
 	makeglossaries $(DOC)        
 	xelatex  $(SRC)
