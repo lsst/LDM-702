@@ -11,7 +11,7 @@ OBJ=$(SRC:.tex=.pdf)
 #Default when you type make
 all: $(OBJ)
 
-$(OBJ): $(tex) acronyms.tex aglossary.tex
+$(OBJ): $(tex) aglossary.tex
 	latexmk -bibtex -xelatex -f $(SRC)
 	makeglossaries $(DOC)        
 	xelatex  $(SRC)
@@ -19,10 +19,10 @@ $(OBJ): $(tex) acronyms.tex aglossary.tex
 
 #The generateAcronyms.py  script is in lsst-texmf/bin - put that in the path
 acronyms.tex :$(tex) myacronyms.txt
-	generateAcronyms.py   $(tex)
+	generateAcronyms.py   $(tex) 
 
 aglossary.tex :$(tex) myacronyms.txt
-	generateAcronyms.py  -g $(tex)
+	generateAcronyms.py  -g $(tex) aglossary.tex
 
 clean :
 	latexmk -c

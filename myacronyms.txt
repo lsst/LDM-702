@@ -2,3 +2,4 @@
 # ACRONYM: Definition  example
 MIA:Missing In Action
 
+TOR:Terms Of Refference
